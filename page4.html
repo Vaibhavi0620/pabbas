@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            .cont-flex {
+            display: flex;
+            flex-direction: row;
+            margin: 50px;
+            padding: 10px;
+            width: 800px;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        .col-flex, .row-flex {
+            flex: 1; /* Equal width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .col-flex {
+            background-color: blanchedalmond;
+        }
+
+        .row-flex {
+            background-color: rgb(184, 217, 206);
+            flex-direction: column;
+        }
+
+        img {
+            width: 400px;
+            max-width: 400px;
+            height: auto;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        
+        }
+    </style>
+        <script>
+            function submitOrder() {
+                var name = document.getElementById("name");
+                var phno = document.getElementById("phno");
+                var icname = document.getElementById("icname").value;
+                var icname = document.getElementById("icname").value;
+                var quantity = document.getElementById("quantity").value;
+                console.log(name.value);
+                console.log(phno.value);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div class="cont-flex">
+            
+        <div class="col-flex">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-UImzgFfhBH4Ig0sCu-RULdhNLMrJSEWdSGaAx97KqsvWeaKa_8YLVzg8MUHjLNnI8AXte2FJAYSYNSPjKY1zAI73Fhpd2vqb7EsTtWIntaGPxtotMUE6rmQA64KDsPgfXmbxww/s1600/01.jpg style= "style="width:400px;height:400px;">
+            </div>
+            <div class="row-flex">
+                <center>
+                
+                    <input type="text" id="name" placeholder="Enter name"> <br>
+                    <input type="tel" id="phno" placeholder="phone number"> <br>
+                    <input type="text" id="icname" placeholder="ice cream name"><br>
+                    <input type="number" id="quantity" placeholder="quantity">  <br>
+                    <button type="button" onclick="submitOrder()"> submit</button></center>
+                
+                
+                </div>
+                </div>
+        
+    </body>
+</html>
